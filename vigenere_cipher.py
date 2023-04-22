@@ -54,3 +54,7 @@ def encrypted_char(plain_text, key_text):
     for plaintext_char, key_char in zip(plain_text, iter_key):
         ciphertext += encrypt_char_sol(plaintext_char, key_char) + ' '
     return ciphertext
+
+#input for message and key for vigenere cipher
+plain_text = input("Kindly enter the message:")
+key_text = input("Kindly enter the key this time:")
