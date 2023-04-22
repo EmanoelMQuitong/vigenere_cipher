@@ -93,3 +93,12 @@ else:
         key_code += ''
     Rchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
     key_text_numbers = (Rchars[i] for i in Result_key)
+
+#Add the number of ascii code from plain_text numbers. If it is greater than 26, modulus is applied and result is printed. If not, the sum is printed
+for a, b in zip(plain_text_numbers, key_text_numbers):
+    add = a + b
+    if add >= 26:
+        mod = add%26
+        print(mod)
+    else:
+        print(add)
