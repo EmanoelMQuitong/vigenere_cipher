@@ -61,3 +61,6 @@ key_text = input("Kindly enter the key this time:")
 
 #declare cipher text from funciton encrypted_char
 ciphertext = encrypted_char(plain_text, key_text)
+
+#print result as ciphertext
+print('\n', f"CIPHERTEXT: ",'\n', ciphertext)
