@@ -27,3 +27,21 @@ def iteration(plain_text, key_text  ):
         else:
             iter_key += ''
     return iter_key
+
+#encrypt_char_sol function is defined. It allows the user to process each character from iteration function. These characters are changed into ascii code, plain_char_iterate is added to its respective key_char_iterate. If it is greater than 26, modulus is applied. 
+def encrypt_char_sol(plain_char, key_char, mod_list = 'encrypt'):
+    if plain_char.isalpha():
+        first_letter = 'a'
+        if plain_char.upper():
+            first_letter = 'A'
+        
+        plain_char_iterate = ord(plain_char) - ord(first_letter)
+        key_char_iterate = ord(key_char) - ord(first_letter)
+
+
+        if mod_list == 'encrypt':
+            new_char_pos = (plain_char_iterate + key_char_iterate) % 26
+        else:
+            new_char_pos = (plain_char_iterate - key_char_iterate + 26) % 26
+        return chr(new_char_pos + ord(first_letter))
+    return plain_char
