@@ -64,3 +64,8 @@ ciphertext = encrypted_char(plain_text, key_text)
 
 #print result as ciphertext
 print('\n', f"CIPHERTEXT: ",'\n', ciphertext)
+
+#Unable to use the previous definition functions to list add values of key and text messages.
+#Create alternative way
+#Preparation for alternative
+print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY:")
