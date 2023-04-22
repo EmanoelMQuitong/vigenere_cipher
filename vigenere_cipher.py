@@ -13,3 +13,17 @@ def key_case(key_text):
     key_text = key_text.upper()
     key_text = key_text.replace(" ","")
     return key_text
+
+#Iteration function is created. It enables the user to repeatedly process each letter of the message and the key message.
+def iteration(plain_text, key_text  ):
+    iter_key = ''
+    i = 0
+    result_plain = plain_case(plain_text)
+    result_key = key_case(key_text)
+    for char in result_plain:
+        if char.isalpha():
+            iter_key += result_key[i % len(result_key)]
+            i += 1
+        else:
+            iter_key += ''
+    return iter_key
