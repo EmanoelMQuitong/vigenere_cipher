@@ -67,5 +67,8 @@ print('\n', f"CIPHERTEXT: ",'\n', ciphertext)
 
 #Unable to use the previous definition functions to list add values of key and text messages.
 #Create alternative way
-#Preparation for alternative
+#Preparation for
 print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY:")
+
+#Chars  is declared for each letter from input is converted to ascii code.
+Cchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
