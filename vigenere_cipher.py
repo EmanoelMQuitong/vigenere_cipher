@@ -58,3 +58,6 @@ def encrypted_char(plain_text, key_text):
 #input for message and key for vigenere cipher
 plain_text = input("Kindly enter the message:")
 key_text = input("Kindly enter the key this time:")
+
+#declare cipher text from funciton encrypted_char
+ciphertext = encrypted_char(plain_text, key_text)
