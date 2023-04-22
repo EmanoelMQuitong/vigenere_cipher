@@ -45,3 +45,12 @@ def encrypt_char_sol(plain_char, key_char, mod_list = 'encrypt'):
             new_char_pos = (plain_char_iterate - key_char_iterate + 26) % 26
         return chr(new_char_pos + ord(first_letter))
     return plain_char
+
+#encrypt_char function is defined. This function prints the ciphered text from plain characters to its corresponding key characters
+def encrypted_char(plain_text, key_text):
+    ciphertext = ''
+    plain_text = plain_case(plain_text)
+    iter_key = iteration(plain_text, key_text) 
+    for plaintext_char, key_char in zip(plain_text, iter_key):
+        ciphertext += encrypt_char_sol(plaintext_char, key_char) + ' '
+    return ciphertext
