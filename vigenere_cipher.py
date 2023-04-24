@@ -155,3 +155,4 @@ for a, b in zip(plain_text_numbers, key_text_numbers):
 
 #Testing works yay!
 #Text art and Text color is applied
+#Task done
