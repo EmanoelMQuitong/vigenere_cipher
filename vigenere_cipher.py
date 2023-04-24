@@ -68,7 +68,10 @@ print('\n', f"CIPHERTEXT: ",'\n', ciphertext)
 #Unable to use the previous definition functions to list add values of key and text messages.
 #Create alternative way
 #Preparation for
-print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY:")
+
+color = fg('red')
+print_text = (f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY:")
+print(color + pyfiglet.figlet_format( print_text, font= "digital"))
 
 #Chars  is declared for each letter from input is converted to ascii code.
 Cchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
@@ -108,8 +111,10 @@ for a, b in zip(plain_text_numbers, key_text_numbers):
     add = a + b
     print(add)
 
+color = fg('blue')
 #print the list of sums with modulus
-print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY WITH APPLIED MOD:")
+text_print = (f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY WITH APPLIED MOD:")
+print(color + pyfiglet.figlet_format(text_print , font= "digital"))
 
 #Unable to use the same variables for printing mod
 #Solution repeat the process and manipulate some factors.
@@ -149,3 +154,4 @@ for a, b in zip(plain_text_numbers, key_text_numbers):
         print(add)
 
 #Testing works yay!
+#Text art and Text color is applied
