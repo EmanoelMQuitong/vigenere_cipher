@@ -120,3 +120,9 @@ Cchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
 #result_plain converts entered text to upper case and removes spaces. plain_text_numbers lists each ascii code per character from the message."
 result_plain = plain_case(plain_text)
 plain_text_numbers = (Cchars[i] for i in result_plain)
+
+#Create the same function for key text. However, the length of plain_text should be equal to the length of key_text.
+Result_key = key_case(key_text)
+if len(result_plain) == len(Result_key):
+    Rchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
+    key_text_numbers = (Rchars[i] for i in Result_key)
