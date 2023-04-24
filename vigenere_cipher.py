@@ -112,3 +112,4 @@ for a, b in zip(plain_text_numbers, key_text_numbers):
 print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY WITH APPLIED MOD:")
 
 #Unable to use the same variables for printing mod
+#Solution repeat the process and manipulate some factors.
