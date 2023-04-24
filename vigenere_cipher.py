@@ -113,3 +113,10 @@ print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY WITH APPLIED MOD:")
 
 #Unable to use the same variables for printing mod
 #Solution repeat the process and manipulate some factors.
+
+#Chars  is declared for each letter from input is converted to ascii code.
+Cchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
+
+#result_plain converts entered text to upper case and removes spaces. plain_text_numbers lists each ascii code per character from the message."
+result_plain = plain_case(plain_text)
+plain_text_numbers = (Cchars[i] for i in result_plain)
