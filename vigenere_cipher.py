@@ -98,7 +98,12 @@ else:
 for a, b in zip(plain_text_numbers, key_text_numbers):
     add = a + b
     if add >= 26:
-        mod = add%26
+        mod = add%26  
         print(mod)
     else:
         print(add)
+
+#Print the sum of plain_text and key_text in ascii form
+for a, b in zip(plain_text_numbers, key_text_numbers):
+    add = a + b
+    print(add)
