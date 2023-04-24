@@ -126,3 +126,15 @@ Result_key = key_case(key_text)
 if len(result_plain) == len(Result_key):
     Rchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
     key_text_numbers = (Rchars[i] for i in Result_key)
+
+#If the length of key case is not equal to the length of plain_case, key_case characters is repeated with its respective sequence until it is equal to the length of the message
+else:
+    key_code = ''
+    i = 0
+    for chars in result_plain:
+        key_code += Result_key[i % len(Result_key)]
+        i += 1
+    else:
+        key_code += ''
+    Rchars = {chr(i):i-ord('A') for i in range(ord('A'), ord('A')+26)}
+    key_text_numbers = (Rchars[i] for i in Result_key)
