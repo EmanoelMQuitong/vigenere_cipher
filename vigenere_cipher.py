@@ -108,7 +108,7 @@ for a, b in zip(plain_text_numbers, key_text_numbers):
     add = a + b
     print(add)
 
-#print the list of sums
+#print the list of sums with modulus
 print(f"LIST OF SUMS OF ENCRYPTED MESSAGE AND KEY WITH APPLIED MOD:")
 
 #Unable to use the same variables for printing mod
@@ -147,3 +147,5 @@ for a, b in zip(plain_text_numbers, key_text_numbers):
         print(mod)
     else:
         print(add)
+
+#Testing works yay!
